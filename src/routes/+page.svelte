@@ -17,18 +17,28 @@
     const images = [
         {
             alt: "Intro",
-            src: "/src/lib/assets/The_hactus_poster_small.webp",
+            src: "/src/lib/assets/hactus_poster.webp",
             title: "intro",
         },
         {
             alt: "asterisk",
-            src: "/src/lib/assets/asterisk_small.webp",
+            src: "/src/lib/assets/asterisk.webp",
             title: "asterisk",
         },
         {
             alt: "coral",
             src: "/src/lib/assets/coral.png",
             title: "coral",
+        },
+        {
+            alt: "obnitem",
+            src: "/src/lib/assets/Obnite.webp",
+            title: "obnitem",
+        },
+        {
+            alt: "secretcode",
+            src: "/src/lib/assets/secretcodeofhactuss.png",
+            title: "secretcode",
         },
     ];
     //import images from "./images.json";
