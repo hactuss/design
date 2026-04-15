@@ -111,12 +111,6 @@
 </main>
 
 <style>
-    img {
-        width: 100%;
-    }
-    main {
-        width: 100rem;
-    }
     .gallery {
         display: flex;
         flex-direction: column;
