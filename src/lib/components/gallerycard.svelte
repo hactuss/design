@@ -1,8 +1,11 @@
 <script>
-    export let image_url;
+    let image_url = $props();
+    console.log(image_url);
 </script>
 
-<main></main>
+<main>
+    <img src={image_url} alt={image_url} />
+</main>
 
 <style>
     main {

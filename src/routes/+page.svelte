@@ -1,32 +1,62 @@
 <script>
+    import Gallerycard from "$lib/components/gallerycard.svelte";
+    let poster;
+    //import "$lib/assets/hactus_poster.webp";
+    let index = $state(0);
+    import {
+        Carousel,
+        Controls,
+        Thumbnails,
+        CarouselIndicators,
+    } from "flowbite-svelte";
+    const images = [
+        {
+            alt: "Intro",
+            src: "/src/lib/assets/The_hactus_poster.webp",
+            title: "intro",
+        },
+        {
+            alt: "asterisk",
+            src: "/src/lib/assets/asterisk.webp",
+            title: "asterisk",
+        },
+    ];
+    //import images from "./images.json";
 </script>
 
 <main>
-    {#if false}
+    {#if true}
         <header>
-            <h1>Johannes Design</h1>
-            <div>
-                <button on:click={scrollTo(0, 50)}>scroll</button>
-            </div>
+            <h1>Hactus Design</h1>
         </header>
         <main>
-            <p>
-                Ich mache für einen begrenzten Zeitraum digitale Designs in
-                verschiedensten Stilen. Sei es futuristisch, klassisch, simpel,
-                minimalistisch, ich kann es designen. Wie das ganze aussieht
-                sehen sie hier. Der hauptsächlich sehr futuristische Stil, den
-                ich oft verwende, wird durch the Designers Republic™ inspiriert.
-            </p>
+            <Carousel {images}>
+                <div class="d">
+                    <Controls />
+                </div>
+            </Carousel>
 
-            <div class="portfolio">
-                <div class="gallery"></div>
-            </div>
+            <!-- --
+                    <div class="gallery-box">
+                        <h1>Intro</h1>
+                        <img
+                            src="/src/lib/assets/The_hactus_poster.webp"
+                            alt=""
+                            class="image"
+                        />
+                    </div>
+                    <div class="gallery-box">
+                        <h1>3*S</h1>
+                        <img
+                            src="/src/lib/assets/asterisk.webp"
+                            alt=""
+                            class="image"
+                        />
+                    </div>-->
         </main>
-        <footer>
-            <h2>Kontakt</h2>
-            <p>holznerjohannes@proton.me</p>
-        </footer>
+        <footer></footer>
     {/if}
+
     <!-- --
     <h1>header</h1>
     <h2>header</h2>
@@ -35,8 +65,19 @@
     <h5>header</h5>
     <h6>header</h6>
     <p>paragraph</p>
-    <button>button</button>-->
+    <button on:click={scrollTo(0, 50)}>scroll</button>
+    -->
 </main>
 
 <style>
+    .image {
+        width: 75%;
+    }
+    main {
+        width: 100rem;
+    }
+    .d {
+        width: 100vw;
+        display: flex;
+    }
 </style>
