@@ -7,6 +7,12 @@
     import { quintOut } from "svelte/easing";
     import { Gallery } from "flowbite-svelte";
 
+    import intro from "$lib/assets/hactus_poster.webp";
+    import ast from "$lib/assets/asterisk.webp";
+    import obn from "$lib/assets/Obnite.webp";
+    import cor from "$lib/assets/coral.png";
+    import sco from "$lib/assets/secretcodeofhactuss.png";
+
     let index = $state(0);
     import {
         Carousel,
@@ -52,15 +58,15 @@
         </header>
         <main>
             <div class="gallery">
-                <img src="../lib/assets/hactus_poster.webp" alt="intro" />
+                <img src={intro} alt="intro" />
                 <br />
-                <img src="../lib/assets/asterisk.webp" alt="asterisk" />
+                <img src={ast} alt="asterisk" />
                 <br />
-                <img src="../lib/assets/Obnite.webp" alt="obnitem" />
+                <img src={obn} alt="obnitem" />
                 <br />
-                <img src="../lib/assets/coral.png" alt="coral" />
+                <img src={cor} alt="coral" />
                 <br />
-                <img src="../lib/assets/secretcodeofhactuss.png" alt="code" />
+                <img src={sco} alt="code" />
             </div>
             <!--
             <Gallery items={images} />
@@ -115,5 +121,11 @@
         display: flex;
         flex-direction: column;
         width: 50vw;
+    }
+    .intro {
+        background-image: url("$lib/assets/hactus_poster.webp");
+    }
+    .ast {
+        background-image: url("$lib/assets/asterisk.webp");
     }
 </style>
