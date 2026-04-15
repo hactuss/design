@@ -2,6 +2,11 @@
     import Gallerycard from "$lib/components/gallerycard.svelte";
     let poster;
     //import "$lib/assets/hactus_poster.webp";
+    //
+    import { scale } from "svelte/transition";
+    import { quintOut } from "svelte/easing";
+    import { Gallery } from "flowbite-svelte";
+
     let index = $state(0);
     import {
         Carousel,
@@ -12,13 +17,18 @@
     const images = [
         {
             alt: "Intro",
-            src: "/src/lib/assets/The_hactus_poster.webp",
+            src: "/src/lib/assets/The_hactus_poster_small.webp",
             title: "intro",
         },
         {
             alt: "asterisk",
-            src: "/src/lib/assets/asterisk.webp",
+            src: "/src/lib/assets/asterisk_small.webp",
             title: "asterisk",
+        },
+        {
+            alt: "coral",
+            src: "/src/lib/assets/coral.png",
+            title: "coral",
         },
     ];
     //import images from "./images.json";
@@ -30,13 +40,15 @@
             <h1>Hactus Design</h1>
         </header>
         <main>
-            <Carousel {images}>
+            <Gallery items={images} />
+            <!-- --
+            <Carousel {images} transition={scaleAnimation}>
                 <div class="d">
                     <Controls />
                 </div>
             </Carousel>
 
-            <!-- --
+             --
                     <div class="gallery-box">
                         <h1>Intro</h1>
                         <img
