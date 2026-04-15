@@ -50,8 +50,20 @@
             <h1>Hactus Design</h1>
         </header>
         <main>
+            <div class="gallery">
+                <img src="/src/lib/assets/hactus_poster.webp" alt="intro" />
+                <br />
+                <img src="/src/lib/assets/asterisk.webp" alt="asterisk" />
+                <br />
+                <img src="/src/lib/assets/Obnite.webp" alt="obnitem" />
+                <br />
+                <img src="/src/lib/assets/coral.png" alt="coral" />
+                <br />
+                <img src="/src/lib/assets/secretcodeofhactuss.png" alt="code" />
+            </div>
+            <!--
             <Gallery items={images} />
-            <!-- --
+
             <Carousel {images} transition={scaleAnimation}>
                 <div class="d">
                     <Controls />
@@ -92,14 +104,15 @@
 </main>
 
 <style>
-    .image {
-        width: 75%;
+    img {
+        width: 100%;
     }
     main {
         width: 100rem;
     }
-    .d {
-        width: 100vw;
+    .gallery {
         display: flex;
+        flex-direction: column;
+        width: 50vw;
     }
 </style>
