@@ -14,6 +14,7 @@
         Thumbnails,
         CarouselIndicators,
     } from "flowbite-svelte";
+    /*
     const images = [
         {
             alt: "Intro",
@@ -40,7 +41,7 @@
             src: "/src/lib/assets/secretcodeofhactuss.png",
             title: "secretcode",
         },
-    ];
+        ];*/
     //import images from "./images.json";
 </script>
 
