@@ -51,15 +51,15 @@
         </header>
         <main>
             <div class="gallery">
-                <img src="/src/lib/assets/hactus_poster.webp" alt="intro" />
+                <img src="../lib/assets/hactus_poster.webp" alt="intro" />
                 <br />
-                <img src="/src/lib/assets/asterisk.webp" alt="asterisk" />
+                <img src="../lib/assets/asterisk.webp" alt="asterisk" />
                 <br />
-                <img src="/src/lib/assets/Obnite.webp" alt="obnitem" />
+                <img src="../lib/assets/Obnite.webp" alt="obnitem" />
                 <br />
-                <img src="/src/lib/assets/coral.png" alt="coral" />
+                <img src="../lib/assets/coral.png" alt="coral" />
                 <br />
-                <img src="/src/lib/assets/secretcodeofhactuss.png" alt="code" />
+                <img src="../lib/assets/secretcodeofhactuss.png" alt="code" />
             </div>
             <!--
             <Gallery items={images} />
