@@ -111,10 +111,11 @@
 </main>
 
 <style>
+	main{width: 100vw;}
     .gallery {
         display: flex;
         flex-direction: column;
-        width: 50vw;
+        width: 100%;
         justify-content: center;
         align-items: center;
     }
