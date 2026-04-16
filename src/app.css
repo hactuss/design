@@ -12,7 +12,7 @@
 }
 html {
     background-color: rgb(87, 87, 119);
-    color: rgb(238, 212, 181);
+    color: rgb(255, 255, 255);
 }
 /*
 Primary: #eb0ddd - rgb(235, 13, 221) - hsl(304, 90%, 49%)
@@ -24,8 +24,8 @@ h1 {
     mix-blend-mode: normal;
 }
 header {
-    border-top: rgb(0 200 30) solid 1em;
-    border-bottom: rgb(0 200 30) solid 1em;
+    border-top: rgb(254, 1, 128) solid 1em;
+    border-bottom: rgb(254, 1, 128) solid 1em;
 }
 main {
     display: flex;
