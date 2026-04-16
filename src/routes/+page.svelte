@@ -115,6 +115,8 @@
         display: flex;
         flex-direction: column;
         width: 50vw;
+        justify-content: center;
+        align-items: center;
     }
     .intro {
         background-image: url("$lib/assets/hactus_poster.webp");
